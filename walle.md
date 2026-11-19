@@ -3,13 +3,166 @@
 基于chillibasket 的WALL·E： https://wired.chillibasket.com/3d-printed-wall-e/
 进行改造，让他能够看到东西，听懂说话，自主决策行为。
 
-打印文件已下载到 [stl/Wall-E STL Files](stl/Wall-E%20STL%20Files)。文件名里的 `xN` 是需要打印的份数,每个 STL 只含 1 份。
+需要打印的 61 个文件在 [stl/print](stl/print),文件名已去掉 `-xN` 后缀。每个 STL 只含 1 份,打印份数见下表。
+
+## 打印清单
+
+| 组 | 文件(去掉 .STL) | 打印份数 |
+|---|---|---|
+| 身体 | body-bottom | 1 |
+| 身体 | body-back | 1 |
+| 身体 | body-front | 1 |
+| 身体 | body-front-door | 1 |
+| 身体 | body-front-pins | 2 |
+| 身体 | body-left | 1 |
+| 身体 | body-right | 1 |
+| 身体 | body-top | 1 |
+| 身体 | body-neck-servo-holder | 1 |
+| 手臂 | arm-servo-bracket-left | 1 |
+| 手臂 | arm-servo-bracket-right | 1 |
+| 手臂 | arm-hinge-inner | 2 |
+| 手臂 | arm-hinge-outer | 2 |
+| 手臂 | arm-hinge-axle | 2 |
+| 手臂 | arm-barrel | 2 |
+| 手臂 | arm-barrel-end | 2 |
+| 手臂 | arm-piston | 2 |
+| 手臂 | hand-bracket | 2 |
+| 手臂 | hand-axle | 2 |
+| 手臂 | hand-finger-left | 2 |
+| 手臂 | hand-finger-right | 2 |
+| 手臂 | hand-finger-middle | 2 |
+| 头 | head-center | 1 |
+| 头 | head-axle | 1 |
+| 头 | eye-back-left | 1 |
+| 头 | eye-back-right | 1 |
+| 头 | eye-middle-left | 1 |
+| 头 | eye-middle-right | 1 |
+| 头 | eye-front-left | 1 |
+| 头 | eye-front-right | 1 |
+| 头 | eye-camera-replica | 2 |
+| 头 | eye-camera-mount | 2 |
+| 颈 | neck-bottom-axle | 1 |
+| 颈 | neck-bottom-left | 1 |
+| 颈 | neck-bottom-right | 1 |
+| 颈 | neck-bottom-linkage | 1 |
+| 颈 | neck-middle-axle | 1 |
+| 颈 | neck-top | 1 |
+| 颈 | neck-round-bottom | 1 |
+| 颈 | neck-round-top-left | 1 |
+| 颈 | neck-round-top-right | 1 |
+| 颈 | neck-wire-guide-left | 1 |
+| 颈 | neck-wire-guide-right | 1 |
+| 颈 | neck-top-linkage | 1 |
+| 轮子 | wheel-back | 4 |
+| 轮子 | wheel-front | 4 |
+| 轮子 | wheel-top | 8 |
+| 轮子 | wheel-gear-driven | 2 |
+| 轮子 | wheel-gear-motor | 2 |
+| 轮子 | wheel-axle-notched | 6 |
+| 轮子 | wheel-axle-back | 2 |
+| 轮子 | wheel-axle-spacer | 8 |
+| 轮子 | wheel-frame-left | 1 |
+| 轮子 | wheel-frame-right | 1 |
+| 轮子 | wheel-frame-addon | 2 |
+| 轮子 | wheel-bracket-inner-left | 1 |
+| 轮子 | wheel-bracket-inner-right | 1 |
+| 轮子 | wheel-bracket-outer-left | 1 |
+| 轮子 | wheel-bracket-outer-right | 1 |
+| 履带 | tread-plate | 70 |
+| 履带 | tread-pin | 140 |
+| **合计** | | **312** |
+
+作者 Google Drive 的 STL 文件夹里还有 14 个文件,不在 PDF 清单里,用途我没核实,已单独放进 [stl/not-in-pdf](stl/not-in-pdf),先不打印:`body-front-power`、`switch-holder`、`missing-piston-insert`、`neck-bottom-linkage-longer`、`wheel-top-larger`、`wheel-bracket-inner-left-2`、`wheel-bracket-inner-left-3`、`wheel-bracket-inner-right-2`、`wheel-bracket-inner-right-3`、`wheel-bracket-outer-left-2`、`wheel-bracket-outer-left-3`、`wheel-bracket-outer-right-2`、`wheel-bracket-outer-right-3`、`Wall-E_Assembly_NotForPrinting`(仅供查看装配)。
+
+## 分两次打印
+
+文件是 [stl/print](stl/print) 里对应文件的副本。第一次打完试装没问题,再打第二次。两次都用同样的工艺、层高和摆放方向。
+
+### 第一次打:[stl/batch-1](stl/batch-1)
+
+| 文件(去掉 .STL) | 打印份数 |
+|---|---|
+| arm-hinge-axle | 1 |
+| arm-hinge-outer | 1 |
+| arm-hinge-inner | 1 |
+| wheel-axle-back | 1 |
+| wheel-top | 1 |
+| tread-plate | 6 |
+| tread-pin | 12 |
+| body-neck-servo-holder | 1 |
+| arm-servo-bracket-left | 1 |
+| **合计** | **25** |
+
+### 第二次打:[stl/batch-2](stl/batch-2)
+
+| 组 | 文件(去掉 .STL) | 整机总数 | 第一次已打 | 第二次打 |
+|---|---|---|---|---|
+| 身体 | body-bottom | 1 | 0 | 1 |
+| 身体 | body-back | 1 | 0 | 1 |
+| 身体 | body-front | 1 | 0 | 1 |
+| 身体 | body-front-door | 1 | 0 | 1 |
+| 身体 | body-front-pins | 2 | 0 | 2 |
+| 身体 | body-left | 1 | 0 | 1 |
+| 身体 | body-right | 1 | 0 | 1 |
+| 身体 | body-top | 1 | 0 | 1 |
+| 手臂 | arm-servo-bracket-right | 1 | 0 | 1 |
+| 手臂 | arm-hinge-inner | 2 | 1 | 1 |
+| 手臂 | arm-hinge-outer | 2 | 1 | 1 |
+| 手臂 | arm-hinge-axle | 2 | 1 | 1 |
+| 手臂 | arm-barrel | 2 | 0 | 2 |
+| 手臂 | arm-barrel-end | 2 | 0 | 2 |
+| 手臂 | arm-piston | 2 | 0 | 2 |
+| 手臂 | hand-bracket | 2 | 0 | 2 |
+| 手臂 | hand-axle | 2 | 0 | 2 |
+| 手臂 | hand-finger-left | 2 | 0 | 2 |
+| 手臂 | hand-finger-right | 2 | 0 | 2 |
+| 手臂 | hand-finger-middle | 2 | 0 | 2 |
+| 头 | head-center | 1 | 0 | 1 |
+| 头 | head-axle | 1 | 0 | 1 |
+| 头 | eye-back-left | 1 | 0 | 1 |
+| 头 | eye-back-right | 1 | 0 | 1 |
+| 头 | eye-middle-left | 1 | 0 | 1 |
+| 头 | eye-middle-right | 1 | 0 | 1 |
+| 头 | eye-front-left | 1 | 0 | 1 |
+| 头 | eye-front-right | 1 | 0 | 1 |
+| 头 | eye-camera-replica | 2 | 0 | 2 |
+| 头 | eye-camera-mount | 2 | 0 | 2 |
+| 颈 | neck-bottom-axle | 1 | 0 | 1 |
+| 颈 | neck-bottom-left | 1 | 0 | 1 |
+| 颈 | neck-bottom-right | 1 | 0 | 1 |
+| 颈 | neck-bottom-linkage | 1 | 0 | 1 |
+| 颈 | neck-middle-axle | 1 | 0 | 1 |
+| 颈 | neck-top | 1 | 0 | 1 |
+| 颈 | neck-round-bottom | 1 | 0 | 1 |
+| 颈 | neck-round-top-left | 1 | 0 | 1 |
+| 颈 | neck-round-top-right | 1 | 0 | 1 |
+| 颈 | neck-wire-guide-left | 1 | 0 | 1 |
+| 颈 | neck-wire-guide-right | 1 | 0 | 1 |
+| 颈 | neck-top-linkage | 1 | 0 | 1 |
+| 轮子 | wheel-back | 4 | 0 | 4 |
+| 轮子 | wheel-front | 4 | 0 | 4 |
+| 轮子 | wheel-top | 8 | 1 | 7 |
+| 轮子 | wheel-gear-driven | 2 | 0 | 2 |
+| 轮子 | wheel-gear-motor | 2 | 0 | 2 |
+| 轮子 | wheel-axle-notched | 6 | 0 | 6 |
+| 轮子 | wheel-axle-back | 2 | 1 | 1 |
+| 轮子 | wheel-axle-spacer | 8 | 0 | 8 |
+| 轮子 | wheel-frame-left | 1 | 0 | 1 |
+| 轮子 | wheel-frame-right | 1 | 0 | 1 |
+| 轮子 | wheel-frame-addon | 2 | 0 | 2 |
+| 轮子 | wheel-bracket-inner-left | 1 | 0 | 1 |
+| 轮子 | wheel-bracket-inner-right | 1 | 0 | 1 |
+| 轮子 | wheel-bracket-outer-left | 1 | 0 | 1 |
+| 轮子 | wheel-bracket-outer-right | 1 | 0 | 1 |
+| 履带 | tread-plate | 70 | 6 | 64 |
+| 履带 | tread-pin | 140 | 12 | 128 |
+| **合计** | | **312** | **25** | **287** |
 
 ## 表 1:第一阶段(复现原版,可遥控)
 
 | # | 零件 | 规格 / 搜索关键词 | 数量 | 用途与备注 |
 |---|---|---|---|---|
-| 1 | 3D 打印件 | PLA 或 PETG,约 2–3 kg(估算,以切片为准)。打印 stl 目录里的件,共 310 件。眼睛处打印 1 个 `eye-camera-mount` 和 1 个 `eye-camera-replica`,不要按 PDF 打 2 个 replica | 1 套 | 机身、头、颈、手臂、轮子、履带 |
+| 1 | 3D 打印件 | PLA 或 PETG,约 2–3 kg(估算,以切片为准)。按上面的打印清单打印,共 312 件(PDF 的 310 件加 2 个 `eye-camera-mount`) | 1 套 | 机身、头、颈、手臂、轮子、履带 |
 | 2 | TPU 耗材(可选) | 履带用,配合 ZDC 的回形针销 remix | 1 卷 | 提高履带抓地力 |
 | 3 | M3 螺栓 10mm | 不锈钢 | 14(买 30) | 固定外壳 |
 | 4 | M3 螺栓 20mm | 不锈钢 | 12(买 20) | 固定外壳 |
@@ -47,22 +200,23 @@
 
 | # | 零件 | 规格 / 搜索关键词 | 数量 | 用途与备注 |
 |---|---|---|---|---|
-| 1 | AI 加速板 | Raspberry Pi AI HAT+ 13 TOPS(Hailo-8L),含排针和间隔柱 | 1 | 跑目标检测、人脸、姿态 |
+| 1 | AI 加速板 | Raspberry Pi AI HAT+ 13 TOPS(Hailo-8L),含排针和间隔柱 | 1 | 只跑视觉模型(人脸、目标检测、姿态)。语音识别和决策跑在 Pi 5 的 CPU 上,不在这块板上 |
 | 2 | 机内小风扇 | 30mm 5V | 1 | 外壳封闭,需要在壳体开进出风口 |
-| 3 | 麦克风阵列 | Seeed ReSpeaker XVF3800 4 麦 USB;空间不够就换 ReSpeaker Lite | 1 | 回声消除、降噪、声源方向。先量好空间,XVF3800 直径约 9cm |
-| 4 | 小功放模块 | 如 PAM8302 | 1 | 把麦克风板的线路输出接到喇叭,让它拿到回声参考。我没核实 XVF3800 的输出接口,下单前看规格书 |
-| 5 | USB 摄像头模块 | UVC,广角约 100°,尺寸要能放进眼睛(⌀约 30mm 以内) | 1 | 视觉输入,装进 `eye-camera-mount` |
-| 6 | 细软 USB 线 | 硅胶线,0.5–1m | 1–2 | 摄像头线走颈部,耐反复弯折 |
-| 7 | 舵机独立降压模块 | 输出 6V,5A | 1 | 舵机和树莓派分电源轨,防止电流尖峰重启树莓派 |
-| 8 | 电解电容 | 1000µF,25V | 2 | 舵机电源轨滤波 |
-| 9 | 多区 ToF 测距 | VL53L5CX 模块 | 1 | 前方障碍 |
-| 10 | ToF 测距 | VL53L1X 模块 | 2 | 朝下防跌落 |
-| 11 | IMU | BNO055 或 BNO085 模块 | 1 | 检测被抬起、碰撞、航向 |
-| 12 | Qwiic/STEMMA QT 线 | 100–200mm | 若干 | 传感器接树莓派 I²C |
-| 13 | 大容量电池 | 3S 11.1V 5000mAh,XT60 | 1 | 续航提高到 2–3 小时。机身放不下就放进 cooler box 背包,表 1 的 2200mAh 留作备用 |
-| 14 | cooler box 背包(打印) | Thingiverse thing:4160072 | 1 | 装大电池 |
-| 15 | 内部电子件安装盒(打印) | Thingiverse thing:5227296 | 1 | 固定树莓派和电路板 |
-| 16 | 编码器版 Pololu 37D 电机(可选) | 同系列带编码器版本 | 2 | 速度闭环和里程计,需要改固件 |
+| 3 | 麦克风阵列 | Seeed ReSpeaker XVF3800 4 麦 USB;空间不够就换 ReSpeaker Lite | 1 | 本地识别比云端更怕噪声,需要硬件降噪和波束成形。XVF3800 还带声源方向,可以让头转向说话的人。先量好空间,XVF3800 直径约 9cm |
+| 4 | USB 摄像头模块 | UVC,广角约 100°,尺寸要能放进眼睛(⌀约 30mm 以内) | 1 | 视觉输入,装进 `eye-camera-mount` |
+| 5 | 细软 USB 线 | 硅胶线,0.5–1m | 1–2 | 摄像头线走颈部,耐反复弯折 |
+| 6 | 舵机独立降压模块 | 输出 6V,5A | 1 | 舵机和树莓派分电源轨,防止电流尖峰重启树莓派 |
+| 7 | 电解电容 | 1000µF,25V | 2 | 舵机电源轨滤波 |
+| 8 | 多区 ToF 测距 | VL53L5CX 模块 | 1 | 前方障碍 |
+| 9 | ToF 测距 | VL53L1X 模块 | 2 | 朝下防跌落 |
+| 10 | IMU | BNO055 或 BNO085 模块 | 1 | 检测被抬起、碰撞、航向 |
+| 11 | Qwiic/STEMMA QT 线 | 100–200mm | 若干 | 传感器接树莓派 I²C |
+| 12 | 大容量电池 | 3S 11.1V 5000mAh,XT60 | 1 | 续航提高到 2–3 小时。机身放不下就放进 cooler box 背包,表 1 的 2200mAh 留作备用 |
+| 13 | cooler box 背包(打印) | Thingiverse thing:4160072 | 1 | 装大电池 |
+| 14 | 内部电子件安装盒(打印) | Thingiverse thing:5227296 | 1 | 固定树莓派和电路板 |
+| 15 | 编码器版 Pololu 37D 电机(可选) | 同系列带编码器版本 | 2 | 速度闭环和里程计,需要改固件 |
+
+软件分工(不用买东西):机器人叫声是预先录好的 wav 文件,用表 1 的 I²S 功放和喇叭播放,不需要 TTS。播放叫声时暂停识别,所以不需要回声消除。语音识别在 Pi 5 的 CPU 上本地跑,决策用规则或行为树,不跑 LLM。
 
 价格我没查,买之前请核对规格和库存。
 
